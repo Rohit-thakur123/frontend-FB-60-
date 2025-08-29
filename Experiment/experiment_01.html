@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time table</title>
+    <style>    
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      width: 90%;      
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(22, 21, 21, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+
+    th, td {
+      border: 2px solid #2c3e50;
+      padding: 15px;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    th {
+      background: #34495e;
+      color: #fff;
+    }
+
+    /* Subject colors */
+    .math { background: #aed6f1; }
+    .english { background: #fad7a0; }
+    .electronics { background: #f5b7b1; }
+    .html { background: #f9e79f; }
+    .java { background: #d2b4de; }
+    .ethics { background: #a3e4d7; }
+    .dbms { background: #f7cac9; }
+    .co { background: #a9cce3; }
+    .frontend { background: #f5cba7; }
+    .lunch { background: #d5dbdb; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Weekly Time Table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>9:00 - 10:00</th>
+                    <th>10:00 - 11:00</th>
+                    <th>11:00 - 12:00</th>
+                    <th>12:00 - 1:00</th>
+                    <th>1:00 - 2:00</th>
+                    <th>2:00 - 3:00</th>
+                    <th>3:00 - 4:00</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr>
+                <td><b>Monday</b></td>
+                <td>Math</td>
+                <td>English</td>
+                <td>Electronics</td>
+                <td>DBMS</td>
+                <td rowspan="5">Lunch</td>
+                <td>Frontend</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td><b>Tuesday</b></td>
+                <td>DBMS</td>
+                <td>CO</td>
+                <td>Math</td>
+                <td>Ethics</td>
+                <td>Java</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td><b>Wednesday</b></td>
+                <td>Electronics</td>
+                <td>Frontend</td>
+                <td>DBMS</td>
+                <td>English</td>
+                <td>Math</td>
+                <td>CO</td>
+            </tr>
+            <tr>
+                <td><b>Thursday</b></td>
+                <td>Java</td>
+                <td>Ethics</td>
+                <td>HTML</td>
+                <td>DBMS</td>
+                <td>Frontend</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td><b>Friday</b></td>
+                <td>CO</td>
+                <td>English</td>
+                <td>DBMS</td>
+                <td>Electronics</td>
+                <td>Java</td>
+                <td>Ethics</td>
+            </tr>
+            </tbody>
+           
+        </table>
+    </div>
+</body>
+</html>
