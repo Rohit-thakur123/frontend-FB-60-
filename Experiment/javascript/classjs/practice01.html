@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Page</title>
+    <link rel="stylesheet" href="practice01.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Front Page</h1>
+        <p class="tagline">A simple and clean demo layout using HTML and CSS</p>
+    </header>
+
+    <section class="intro">
+        <h2>About This Page</h2>
+        <p>
+            This page is created to demonstrate HTML structure including divs, a table, and a form.
+            You can add your own JavaScript functionality later to make it interactive.
+        </p>
+    </section>
+
+    <section class="info-table">
+        <h2>Student Information Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Branch</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Rohit Singh</td>
+                    <td>CSE</td>
+                    <td>3rd</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Ananya Verma</td>
+                    <td>IT</td>
+                    <td>2nd</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Ravi Kumar</td>
+                    <td>ECE</td>
+                    <td>4th</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="form-section">
+        <h2>Contact Form</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" placeholder="Type your message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <div class="cards">
+        <div class="card">HTML Basics</div>
+        <div class="card">CSS Styling</div>
+        <div class="card">JS Interaction</div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 FrontPage Demo | Designed by Rohit</p>
+    </footer>
+
+    <div class="chessBox">
+        <!-- in js  -->
+    </div>
+    <script src="practice01.js"></script>
+</body>
+</html>
