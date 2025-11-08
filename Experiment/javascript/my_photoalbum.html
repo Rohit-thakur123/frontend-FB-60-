@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Album</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #d7e1ec, #ffffff);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+      letter-spacing: 1px;
+    }
+
+    .album {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .album img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .controls {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #4a90e2;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #357abd;
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>My Photo Album</h1>
+
+  <div class="album">
+    <img id="photo" src="https://picsum.photos/400/300?random=1" alt="Photo">
+  </div>
+
+  <div class="controls">
+    <button id="prevBtn">Previous</button>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <!-- You will handle JS part -->
+  <script>
+    // Example placeholder for your JS logic:
+    // const images = [...];
+    // let index = 0;
+    // nextBtn.addEventListener("click", ()=>{ ... });
+    // prevBtn.addEventListener("click", ()=>{ ... });
+
+    const images=["https://images.unsplash.com/photo-1641913625440-158406784a9f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687", "https://tse3.mm.bing.net/th/id/OIP.M95NmX9MTPcf4yG9X8efWgHaFj?pid=Api&P=0&h=180", "https://img.freepik.com/premium-photo/shree-krishna-illustration-janmashtami-generative-ai_756405-2066.jpg?w=2000", "https://cdn.pixabay.com/photo/2023/06/23/08/51/lord-krishna-8083043_640.png"];
+
+    let index=0;
+    let len=images.length;
+    let img=document.querySelector("#photo");
+    let nextBtn=document.querySelector("#nextBtn");
+    let prevBtn=document.querySelector("#prevBtn");
+    nextBtn.addEventListener("click", ()=>{
+        img.setAttribute("src", images[index % len]);
+        index++;
+    });
+    prevBtn.addEventListener("click", ()=>{   
+        index--;
+        if(index<0){
+            index=images.length-1;
+        }     
+        img.setAttribute("src", images[index]);
+        
+    })
+  </script>
+
+</body>
+</html>
