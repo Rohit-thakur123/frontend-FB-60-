@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character Counter</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+        }
+        .back{
+            background: #e74c3c;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .text-input {
+            width: 100%;
+            height: 150px;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            resize: none;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .text-input:focus {
+            outline: none;
+            border-color: #6a11cb;
+        }
+
+        .counter {
+            margin-top: 15px;
+            text-align: right;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .green {
+            color: #2ecc71;
+        }
+
+        .orange {
+            color: #f39c12;
+        }
+
+        .red {
+            color: #e74c3c;
+        }
+
+        .limit-reached {
+            border-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Live Character Counter</h1>
+        <textarea 
+            id="textInput" 
+            class="text-input" 
+            placeholder="Start typing here..."
+            maxlength="100"
+        ></textarea>
+        <div id="counter" class="counter green">Characters left: 100</div>
+    </div>
+
+    <script src="../javascript__code/02_counter.js"></script>
+</body>
+</html>
