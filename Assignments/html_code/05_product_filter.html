@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .buttons button {
+            padding: 8px 15px;
+            margin: 5px;
+            border: none;
+            background: #4a90e2;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .buttons button:hover {
+            background: #357ac8;
+        }
+
+        #searchBox {
+            width: 60%;
+            padding: 8px;
+            display: block;
+            margin: 0 auto 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #productList {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .product-item {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .product-item:last-child {
+            border-bottom: none;
+        }
+
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Product Filter</h2>
+
+    <!-- Search box (Bonus) -->
+    <input type="text" id="searchBox" placeholder="Search products...">
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button id="btnAll">All</button>
+        <button id="btnElectronics">Electronics</button>
+        <button id="btnClothing">Clothing</button>
+    </div>
+
+    <!-- Product list -->
+    <div id="productList">
+        <!-- JS will dynamically insert products here -->
+    </div>
+
+    <script src="../javascript__code/05_product_filter.js"></script>
+</body>
+</html>
