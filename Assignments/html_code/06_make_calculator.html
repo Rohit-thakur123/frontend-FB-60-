@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+        .container{   
+            height: fit-content;       
+            width: fit-content;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            background-color: antiquewhite;
+        }
+        button{
+            padding: 13px;
+            font-size: 20px;
+            border-radius: 8px;
+            margin: 2px;
+            height: 55px;
+            width: 60px;
+            /* margin: ; */            
+        }
+        input{
+            font-weight: 700;
+            font-size: 20px;
+            width: 260px;
+            height: 50px;
+            /* padding: 15px 20px; */
+            /* height: 55px; */
+            /* width: 60px; */
+            margin: 5px 0 10px 0;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .clear{
+            /* padding: 15px 130px;             */
+            width: 260px;
+            margin: 5px 0 10px 0;
+            border: 1px solid black;
+            border-radius: 5px;
+            font-weight: 700;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <input type="text">
+        </div>
+        <div class="row">
+            <button class="button">1</button>
+            <button class="button">2</button>
+            <button class="button">3</button>
+            <button class="button">*</button>
+        </div>
+        <div class="row">
+            <button class="button">4</button>
+            <button class="button">5</button>
+            <button class="button">6</button>
+            <button class="button">-</button>
+        </div>
+        <div class="row">
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">9</button>
+            <button class="button">.</button>
+        </div>
+        <div class="row">
+            <button class="button">0</button>
+            <button class="button">=</button>
+            <button class="button">+</button>
+            <button class="button">/</button>
+        </div>
+        <div class="row">
+            <button class="button clear">clear</button>
+        </div>
+    </div>
+    <script src="../javascript__code/06_make_calculator.js"></script>
+     
+</body>
+</html>
